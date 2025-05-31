@@ -1,0 +1,14 @@
+C:\Users\ahmed\Desktop\SharpServer\SharpServer.App\bin\Debug\net8.0\SharpServer.App.exe
+C:\Users\ahmed\Desktop\SharpServer\SharpServer.App\bin\Debug\net8.0\SharpServer.App.deps.json
+C:\Users\ahmed\Desktop\SharpServer\SharpServer.App\bin\Debug\net8.0\SharpServer.App.runtimeconfig.json
+C:\Users\ahmed\Desktop\SharpServer\SharpServer.App\bin\Debug\net8.0\SharpServer.App.dll
+C:\Users\ahmed\Desktop\SharpServer\SharpServer.App\bin\Debug\net8.0\SharpServer.App.pdb
+C:\Users\ahmed\Desktop\SharpServer\SharpServer.App\obj\Debug\net8.0\SharpServer.App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmed\Desktop\SharpServer\SharpServer.App\obj\Debug\net8.0\SharpServer.App.AssemblyInfoInputs.cache
+C:\Users\ahmed\Desktop\SharpServer\SharpServer.App\obj\Debug\net8.0\SharpServer.App.AssemblyInfo.cs
+C:\Users\ahmed\Desktop\SharpServer\SharpServer.App\obj\Debug\net8.0\SharpServer.App.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\Desktop\SharpServer\SharpServer.App\obj\Debug\net8.0\SharpServer.App.dll
+C:\Users\ahmed\Desktop\SharpServer\SharpServer.App\obj\Debug\net8.0\refint\SharpServer.App.dll
+C:\Users\ahmed\Desktop\SharpServer\SharpServer.App\obj\Debug\net8.0\SharpServer.App.pdb
+C:\Users\ahmed\Desktop\SharpServer\SharpServer.App\obj\Debug\net8.0\SharpServer.App.genruntimeconfig.cache
+C:\Users\ahmed\Desktop\SharpServer\SharpServer.App\obj\Debug\net8.0\ref\SharpServer.App.dll
