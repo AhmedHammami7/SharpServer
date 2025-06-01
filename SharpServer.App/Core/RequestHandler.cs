@@ -13,16 +13,31 @@ namespace SharpServer.App.Core
             int bytesRead = stream.Read(buffer, 0, buffer.Length);
             string requestText = Encoding.UTF8.GetString(buffer, 0, bytesRead);
 
-            Console.WriteLine("[Request Received]");
-            Console.WriteLine(requestText);
+            HttpRequest request = HttpRequest.Parse(requestText);
 
+            Console.WriteLine($"[Parsed Request] {request.Method} {request.Path} {request.Version}");
+
+            foreach (var header in request.Headers)
+                Console.WriteLine($"{header.Key}: {header.Value}");
+
+
+
+            string responseBody = $"Method: {request.Method}\nPath: {request.Path}\n";
+
+
+            if (request.Query.Count > 0)
+            {
+                responseBody += "Query Parameters:\n";
+                foreach (var kvp in request.Query)
+                    responseBody += $"- {kvp.Key} = {kvp.Value}\n";
+            }
             string responseText =
                 "HTTP/1.1 200 OK\r\n" +
                 "Content-Type: text/plain\r\n" +
-                "Content-Length: 13\r\n" +
+                $"Content-Length: {Encoding.UTF8.GetByteCount(responseBody)}\r\n" +
                 "Connection: close\r\n" +
                 "\r\n" +
-                "Hello, World!";
+                responseBody;
 
             byte[] responseBytes = Encoding.UTF8.GetBytes(responseText);
             stream.Write(responseBytes, 0, responseBytes.Length);
