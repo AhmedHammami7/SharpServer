@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SharpServe.Core;
+using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Text.Json;
@@ -54,6 +55,12 @@ namespace SharpServer.App.Core
             _router.Register("DELETE", "/users/{id}", (req, routeParams) =>
             {
                 return new HttpResponse { Body = $"User {routeParams["id"]} deleted successfully." };
+            });
+            // Static file catch-all (MUST be last)
+            _router.Register("GET", "/static/{*path}", (req, routeParams) =>
+            {
+                string filePath = req.Path.Replace("/static", "");
+                return FileHandler.ServeStatic(filePath);
             });
         }
         public void Start()
